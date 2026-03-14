@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sqs-router"
+version = "0.1.0"
+description = "A lightweight decorator-based router for AWS Lambda SQS consumers"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+
+keywords = [
+    "aws",
+    "sqs",
+    "lambda",
+    "serverless",
+    "event-driven",
+    "router",
+    "message routing",
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet",
+    "Typing :: Typed",
+]
+
+[[project.authors]]
+name = "Aditya Ganti"
+email = "adi.ganti95@hotmail.com"
+
+[project.urls]
+Homepage = "https://github.com/AdityaAudi/sqs-router"
+Repository = "https://github.com/AdityaAudi/sqs-router"
+Issues = "https://github.com/AdityaAudi/sqs-router/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sqs_router"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
