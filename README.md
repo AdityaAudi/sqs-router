@@ -263,18 +263,6 @@ pip install pytest
 pytest
 ```
 
-## Publish to PyPI
-
-```bash
-pip install build twine
-python -m build
-twine upload dist/*
-```
-
-## Contributing
-
-PRs welcome. Please add tests for anything new.
-
 ---
 
 MIT · [Aditya Ganti](https://github.com/AdityaAudi)
