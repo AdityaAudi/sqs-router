@@ -1,4 +1,6 @@
 # sqs-router
+# [![PyPI](https://img.shields.io/pypi/v/sqs-router.svg)](https://pypi.org/project/sqs-router/)
+
 
 Decorator-based message routing for Lambda functions that consume SQS.
 

@@ -11,3 +11,4 @@ htmlcov/
 .ruff_cache/
 *.egg
 .DS_Store
+venv/
